@@ -1,11 +1,11 @@
-Poor man's configurable derivation builder
+Parametrizable derivation builder
 
 Usage: 
 ```
 nix run github:ggpeti/param-pkg myflake#lib.mkMyPkg '<arg-expr>'
 ```
 
-Takes a textual nix expression as the final argument. `myflake#lib.mkMyPkg` is a function of type any -> derivation.
+Takes a textual nix expression as the final argument. `myflake#lib.mkMyPkg` is a function of type `any -> derivation`.
 
 Uses `nix eval` under the hood but produces the usual `result` symlink in the cwd.
 
